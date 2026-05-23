@@ -1,0 +1,24 @@
+.chat-container {
+  padding: 20px;
+}
+
+.chat-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.chat-message {
+  font-size: 14px;
+  color: #555;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: #888;
+}

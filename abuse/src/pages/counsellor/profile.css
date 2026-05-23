@@ -1,0 +1,200 @@
+/* ===============================
+   PAGE WRAPPER
+================================= */
+.profile-page {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f6f8fb;
+  min-height: 100vh;
+}
+
+/* ===============================
+   TITLE
+================================= */
+.profile-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #1d3557;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===============================
+   CARD
+================================= */
+.profile-card {
+  max-width: 520px;   /* reduced from 650px */
+  width: 100%;        /* keeps it responsive */
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  margin: 0 auto;
+}
+
+.profile-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   HEADER
+================================= */
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #e5eaf2;
+  transition: 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  border-color: #1d3557;
+}
+
+.profile-header h3,
+.profile-header h2 {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.profile-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===============================
+   DETAILS SECTION
+================================= */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each Row */
+.detail-row,
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-row label,
+.form-group label {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Read-only text */
+.detail-row span {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ===============================
+   INPUTS & SELECTS
+================================= */
+.profile-details input,
+.profile-details textarea,
+.profile-details select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe6;
+  font-size: 14px;
+  transition: 0.3s ease;
+  background: #fafbfc;
+}
+
+.profile-details textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.profile-details input:focus,
+.profile-details textarea:focus,
+.profile-details select:focus {
+  outline: none;
+  border-color: #1d3557;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(29, 53, 87, 0.1);
+}
+
+/* Disabled Inputs */
+.profile-details input:disabled,
+.profile-details textarea:disabled,
+.profile-details select:disabled {
+  background: #f0f2f5;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   FILE INPUT
+================================= */
+.profile-header input[type="file"] {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+.profile-actions {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.profile-actions button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #1d3557, #274c77);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(29, 53, 87, 0.25);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 25px;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-page {
+    padding: 20px 10px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 20px;
+  }
+}

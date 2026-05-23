@@ -1,0 +1,157 @@
+.admin-notifications-container {
+  background: #ffffff;
+  border: 1px solid #d7e1ea;
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+}
+
+.admin-notifications-header {
+  margin-bottom: 20px;
+}
+
+.admin-notifications-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #122033;
+}
+
+.admin-notifications-header p {
+  margin: 6px 0 0;
+  color: #5f6d82;
+}
+
+.admin-notifications-error {
+  color: #b91c1c;
+}
+
+.admin-notifications-list {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-notification-card {
+  border: 1px solid #d7e1ea;
+  border-radius: 14px;
+  padding: 18px;
+  background: #f7fafc;
+}
+
+.admin-notification-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.admin-notification-top h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #122033;
+}
+
+.admin-notification-time {
+  display: inline-block;
+  margin-top: 4px;
+  color: #5f6d82;
+  font-size: 13px;
+}
+
+.admin-notification-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #d9f3ef;
+  color: #0b5f59;
+}
+
+.admin-notification-badge.general {
+  background: #dceffd;
+  color: #0369a1;
+}
+
+.admin-notification-message {
+  margin: 14px 0 0;
+  color: #243447;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.admin-notification-actions {
+  margin-top: 16px;
+}
+
+.admin-arrange-btn,
+.admin-save-session-btn,
+.admin-cancel-session-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-arrange-btn,
+.admin-save-session-btn {
+  background: linear-gradient(135deg, #0f766e, #0b5f59);
+  color: #ffffff;
+}
+
+.admin-cancel-session-btn {
+  background: #e2e8f0;
+  color: #122033;
+}
+
+.admin-notification-arranged {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+}
+
+.admin-session-form {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #d7e1ea;
+  display: grid;
+  gap: 14px;
+}
+
+.admin-session-form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #122033;
+}
+
+.admin-session-form select,
+.admin-session-form input {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 14px;
+}
+
+.admin-session-form-note {
+  margin: 0;
+  color: #5f6d82;
+  line-height: 1.6;
+}
+
+.admin-session-form-actions {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .admin-notification-top {
+    flex-direction: column;
+  }
+
+  .admin-session-form-actions {
+    flex-direction: column;
+  }
+}

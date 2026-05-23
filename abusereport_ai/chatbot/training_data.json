@@ -1,0 +1,34 @@
+{
+"greeting": [
+"hello",
+"hi",
+"hey there",
+"good morning"
+],
+
+"physical_abuse": [
+"my father hits me",
+"someone beat me",
+"I was attacked",
+"someone slapped me"
+],
+
+"sexual_abuse": [
+"someone touched me inappropriately",
+"someone forced me",
+"my uncle touches me",
+"I feel unsafe around someone"
+],
+
+"fear": [
+"I am scared",
+"I feel unsafe",
+"I am afraid to go home"
+],
+
+"sadness": [
+"I feel depressed",
+"I am crying",
+"I feel hopeless"
+]
+}

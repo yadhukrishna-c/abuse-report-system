@@ -1,0 +1,75 @@
+/* ===== CONTAINER ===== */
+.feedback-container {
+  padding: 40px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.feedback-header {
+  margin-bottom: 30px;
+}
+
+.feedback-header h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.feedback-header p {
+  color: #666;
+}
+
+/* ===== GRID ===== */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.feedback-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TOP SECTION ===== */
+.feedback-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-top h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.feedback-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ===== RATING ===== */
+.feedback-rating {
+  font-size: 18px;
+  color: #f4b400;
+}
+
+/* ===== MESSAGE ===== */
+.feedback-message {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}

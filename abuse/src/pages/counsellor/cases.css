@@ -1,0 +1,99 @@
+.cases-container {
+  padding: 10px;
+}
+
+.cases-container h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #1d3557;
+}
+
+/* Grid Layout */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.case-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.case-header h3 {
+  font-size: 16px;
+  color: #1d3557;
+}
+
+/* Priority Badges */
+.priority {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.priority.high {
+  background: #e63946;
+}
+
+.priority.medium {
+  background: #ff9f1c;
+}
+
+.priority.low {
+  background: #2a9d8f;
+}
+
+/* Body */
+.case-body p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Footer */
+.case-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.case-footer button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1d3557, #2a5298);
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.case-footer button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .case-card {
+    padding: 15px;
+  }
+}

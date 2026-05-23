@@ -1,0 +1,19 @@
+.doctor-dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4fdf5; /* light greenish-white */
+}
+
+/* Page content common style */
+.page-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}

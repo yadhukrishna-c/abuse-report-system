@@ -1,0 +1,48 @@
+.doctor-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #0f4c5c;
+  color: white;
+}
+
+.doctor-sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.doctor-sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doctor-sidebar-menu li {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctor-sidebar-menu li:hover {
+  background: #197278;
+}
+
+.doctor-sidebar-menu li.active {
+  background: #197278;
+  font-weight: 600;
+}
+
+.doctor-badge {
+  background: #facc15;
+  color: #1f2937;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}

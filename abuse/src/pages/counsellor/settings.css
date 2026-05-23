@@ -1,0 +1,35 @@
+.settings h2 {
+  margin-bottom: 20px;
+}
+
+.settings-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.settings-card label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.settings-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.settings-card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

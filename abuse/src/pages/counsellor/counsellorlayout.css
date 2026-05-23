@@ -1,0 +1,138 @@
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  height: 100vh;      /* Change from min-height */
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef2f7, #f8fbff);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 270px;
+  background: linear-gradient(180deg, #1d3557, #162c46);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+/* ===== Logo ===== */
+.logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+/* ===== Profile Box ===== */
+.profile-box {
+  text-align: center;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profile-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.profile-box h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.profile-box p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ===== Navigation ===== */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Links */
+.sidebar a,
+.logout-btn {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Hover Effect */
+.sidebar a:hover,
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+/* Active Link (Optional if using NavLink) */
+.sidebar a.active {
+  background: white;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+/* ===== Content Area ===== */
+.content {
+  flex: 1;
+  padding: 35px;
+  background: transparent;
+}
+
+/* Add soft card container feel */
+.page-wrapper {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .profile-box {
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}

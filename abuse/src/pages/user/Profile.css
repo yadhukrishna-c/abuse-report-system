@@ -1,0 +1,255 @@
+/* ===============================
+   CONTAINER
+================================= */
+.profile-container {
+  padding: 10px;
+}
+
+.profile-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #4c3db2;
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   CARD
+================================= */
+.profile-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(109, 91, 208, 0.15);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   PHOTO SECTION
+================================= */
+.profile-photo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6d5bd0, #8b7cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(109, 91, 208, 0.3);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-btn {
+  background: #6d5bd0;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #5a4bcf;
+}
+
+/* ===============================
+   INFO
+================================= */
+.profile-info {
+  margin-bottom: 25px;
+}
+
+.profile-info p {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #2d2a55;
+}
+
+/* ===============================
+   PRIVACY SECTION
+================================= */
+.privacy-section {
+  margin-bottom: 25px;
+}
+
+.privacy-section h3 {
+  margin-bottom: 10px;
+  color: #4c3db2;
+}
+
+.privacy-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(109, 91, 208, 0.15);
+  font-size: 14px;
+}
+
+.active-badge {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.secure-badge {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* ===============================
+   EMERGENCY SECTION
+================================= */
+.emergency-section h3 {
+  margin-bottom: 10px;
+  color: #4c3db2;
+}
+
+.emergency-section p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #2d2a55;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .profile-photo-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.profile-info input,
+.emergency-section input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #d8b4fe;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.profile-info label,
+.emergency-section label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5b21b6;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.profile-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-btn,
+.save-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #7c3aed, #14b8a6);
+  color: white;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+.inactive-badge {
+  background: #e5e7eb;
+  color: #555;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.secure-badge {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 6px;
+  }
+
+  .profile-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .profile-card {
+    padding: 16px;
+  }
+
+  .profile-photo-section {
+    gap: 14px;
+  }
+
+  .privacy-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .privacy-item button {
+    width: 100%;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+  }
+
+  .edit-btn,
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 20px;
+  }
+
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+}

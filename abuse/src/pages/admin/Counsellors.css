@@ -1,0 +1,110 @@
+.counsellor-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7fff7;
+  min-height: 100vh;
+}
+
+.counsellor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.counsellor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.counsellor-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.available {
+  background-color: #4caf50;
+}
+
+.busy {
+  background-color: #f44336;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.modal {
+  background:white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.modal input, .modal select {
+  padding: 10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  width:100%;
+}
+
+.modal-buttons {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.cancel-btn {
+  background-color:#ccc;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:6px;
+  cursor:pointer;
+}
